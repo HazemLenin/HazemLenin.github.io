@@ -1,0 +1,26 @@
+// makeing side nav fixed to be available anywhere
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    // let it out off viewport
+    transform: translateX(-120%);
+    z-index: 1040;
+    transition: transform .5s;
+}
+
+// reset its position when active
+.sidenav.active {
+    transform: translateX(0);
+}
+
+ul.navbar-nav {
+    padding-top: 30px;
+}
+
+ul.navbar-nav > li {
+    padding-left: 30px;
+
+}

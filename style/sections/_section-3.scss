@@ -1,0 +1,15 @@
+.section-3 .container .row div {
+    margin: 15px auto;
+}
+
+.section-3 .container .row div .card {
+    overflow: hidden;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+// adding box shadow to cards and make it little bit higher when hovering it
+.section-3 .container .row div .card:hover {
+    box-shadow: 3px 3px 10px #00000080;
+    transform: translateY(-10px);
+}

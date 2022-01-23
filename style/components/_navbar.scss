@@ -1,0 +1,13 @@
+// adding line under nav link
+.nav-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: all .3s;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}

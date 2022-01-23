@@ -1,0 +1,55 @@
+// importing Roboto font
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// importing all other scss files
+@import 'components/_navbar';
+@import 'components/_sidenav';
+@import 'sections/_section-1';
+@import 'sections/_section-2';
+@import 'sections/_section-3';
+@import 'sections/_section-4';
+
+:root {
+    --dark-theme: var(---bs-dark);
+    --skill-shadow: 10px 10px 60px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    transition: .3s;
+}
+
+#up-btn {
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--bs-dark);
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 2px 2px 3px #121212;
+    transition: all .2s;
+}
+
+#up-btn:hover {
+    background-color: #555;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 3rem;
+}

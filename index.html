@@ -17,33 +17,42 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="javascript:void(0);">Hazem</a>
+            <span class="navbar-brand fw-bold">Hazem</span>
             <button class="navbar-toggler" type="button" id="sidenav-toggle">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse fixed-left" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" id="nav-section-1" href="#section-1">section 1</a>
-                    <a class="nav-item nav-link" id="nav-section-2" href="#section-2">section 2</a>
-                    <a class="nav-item nav-link" id="nav-section-3" href="#section-3">section 3</a>
-                    <a class="nav-item nav-link" id="nav-section-4" href="#section-4">section 4</a>
+                    <a class="nav-item nav-link" id="nav-section-1" href="#section-1">Who Am I</a>
+                    <a class="nav-item nav-link" id="nav-section-2" href="#section-2">What I Do</a>
+                    <a class="nav-item nav-link" id="nav-section-3" href="#section-3">What I Did</a>
+                    <a class="nav-item nav-link" id="nav-section-4" href="#section-4">Contact Me</a>
                 </div>
             </div>
         </div>
     </nav>
     <nav class="sidenav navbar-dark bg-dark">
-        <ul class="navbar-nav">
-            <li><a class="nav-item nav-link sidenav-link" href="#section-1">section 1</a></li>
-            <li><a class="nav-item nav-link sidenav-link" href="#section-2">section 2</a></li>
-            <li><a class="nav-item nav-link sidenav-link" href="#section-3">section 3</a></li>
-            <li><a class="nav-item nav-link sidenav-link" href="#section-4">section 4</a></li>
-        </ul>
+        <div class="navbar-nav m-4">
+            <span class="navbar-brand fw-bold">Hazem</span>
+            <a class="nav-item nav-link sidenav-link" href="#section-1">Who Am I</a>
+            <a class="nav-item nav-link sidenav-link" href="#section-2">What I Do</a>
+            <a class="nav-item nav-link sidenav-link" href="#section-3">What I Did</a>
+            <a class="nav-item nav-link sidenav-link" href="#section-4">Contact Me</a>
+            <div class="text-center">
+                <h5 class="text-white mb-4">
+                    Hazem Lenin
+                </h5>
+                <span class="text-white-50">
+                    &copy; 2020 Hazem Lenin. All rights reserved.
+                </span>
+            </div>
+        </div>
     </nav>
     <button id="up-btn"><i class="fas fa-chevron-up"></i></button>
     <main>
         <!-- Who am I -->
         <section class="section-1 who-am-i position-relative" id="section-1">
-            <!-- <h1 style="font-size: 10em; background: #000; color: white;">IN DEV</h1> -->
+            <h1 style="font-size: 10em; background: #000; color: white;">IN DEV</h1>
             <div data-aos="fade-in" data-aos-duration="500" class="container position-relative">
                 <h1 class="title text-center text-white name">Who am I?</h1>
                 <div class="row justify-content-between g-0">
@@ -51,12 +60,12 @@
                         <h1>Hazem Lenin</h1>
                         <h2><span id="typing"></span><div class="d-inline" id="cursor"></div> developer</h2>
                         <p>
-                            Hi, that’s me Hazem… Hazem Lenin. I am a fullstack web developer. I started my programming life in 2018 with Java & Python.
-                            <!--  I started my career in 2020 when I joined the startup of Pixel Stamp. After a year I decided to work on my own as a freelancer. -->
+                            Hi, that’s me Hazem Lenin. I am a full-stack web developer. I started my programming life in 2018 with Java & Python going throught Django, RubyOnRails and ReactJs to be my 3 main technologies.
+                             I joined the startup of Pixel Stamp and I was participant in Fort Academy E-learning website and vocamue egypt landing page.
                         </p>
                     </div>
                     <div class="col-lg-6 text-white">
-                        <h3>Mainly i work with 8 skills:</h3>
+                        <h3>Some of what I know:</h3>
                         <ul class="skills list-unstyled">
                             <li class="list-skill" id="html">HTML</li>
                             <li class="list-skill" id="css">CSS</li>
@@ -66,10 +75,9 @@
                             <li class="list-skill" id="dj">Django</li>
                             <li class="list-skill" id="java">Java</li>
                             <li class="list-skill" id="ror">Ruby on rails</li>
-                            <li class="list-skill" id="react">ReactJS & native</li>
+                            <li class="list-skill" id="react">ReactJS</li>
                             <!-- <li class="comment">UI/UX designer</li> -->
                             <!-- <li class="comment">Database expert</li> -->
-                            <!-- <li class="comment">Game developer</li> -->
                         </ul>
                     </div>
                 </div>
@@ -83,7 +91,7 @@
         </section>
 
         <!-- What I do -->
-        <section class="section-2 what-i-do" id="section-2">
+        <section class="section-2 pb-5 what-i-do" id="section-2">
             <h1 class="title text-center">What I do?</h1>
             <div class="row justify-content-between g-0">
                 <div class="col-lg-6 col-dark px-5">
@@ -91,19 +99,16 @@
                         Backend
                     </h1>
                     <p>
-                        I can make backend of websites <!-- and manage the database -->
+                        I can make API of websites to make them more secure and easy to use. So it makes websites could be compatible with more platforms. I can also make websites with Python, Django, Ruby on Rails and more.
                     </p>
                 </div>
                 <div class="col-lg-6 col-white px-5">
                     <h1 class="sub-title mx-auto">
                         Frontend
                     </h1>
-                    <ul>
-                        <li>code</li>
-                        <li>code</li>
-                        <li>code</li>
-                        <li>code</li>
-                    </ul>
+                    <p>
+                        I can make websites with HTML, CSS, JS, ReactJS and more. I can also make styles with bootstrap, SASS and more.
+                    </p>
                 </div>
             </div>
         </section>
@@ -115,81 +120,23 @@
                 <div class="row g-0">
                     <div class="col">
                         <div class="card" style="width: 18rem;">
-                            <img src="assets/images/close-up-man-writing-code-laptop.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-top" style="height: 150px; background: url('assets/images/fort-academy-logo.png');background-size: cover;background-position: center;"></div>
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              
+                                <h5 class="card-title">Fort Academy</h5>
+                                <p class="card-text">
+                                    I was a part of the team that made the website of Fort Academy.
+                                </p>
                             </div>
                           </div>
                     </div>
                     <div class="col">
                         <div class="card" style="width: 18rem;">
-                            <img src="assets/images/close-up-man-writing-code-laptop.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-top" style="height: 150px; background: url('assets/images/vocamu-logo.jpg');background-size: cover;background-position: center;"></div>
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="assets/images/close-up-man-writing-code-laptop.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="assets/images/close-up-man-writing-code-laptop.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="assets/images/close-up-man-writing-code-laptop.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="assets/images/close-up-man-writing-code-laptop.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="assets/images/close-up-man-writing-code-laptop.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="assets/images/close-up-man-writing-code-laptop.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              
+                                <h5 class="card-title">Vocamu Egypt</h5>
+                                <p class="card-text">
+                                    I was a part of the team that made the new landing page of Vocamu Egypt.
+                                </p>
                             </div>
                           </div>
                     </div>
@@ -209,6 +156,10 @@
                     <!-- <a href="https://www.instagram.com/hazemlenin/" target="_blank" class="contact-link" data-bs-toggle="tooltip" title="Instagram"> -->
                     <i class="fab fa-instagram text-center"></i>
                 </a>
+                <a href="#" target="_blank" class="contact-link" data-bs-toggle="tooltip" title="Github">
+                    <!-- <a href="https://github.com/HazemLenin/" target="_blank" class="contact-link" data-bs-toggle="tooltip" title="Github"> -->
+                    <i class="fab fa-github text-center"></i>
+                </a>
                 <a href="#" id="number" class="contact-link" data-bs-toggle="tooltip" title="+2001000000000">
                     <!-- <a href="https://api.whatsapp.com/send?phone=01002353194" id="number" class="contact-link" data-bs-toggle="tooltip" title="+2001002353194"> -->
                     <i class="fab fa-whatsapp text-center"></i>
@@ -221,34 +172,13 @@
         </section>
     </main>
     <footer class="bg-dark">
-        <div class="row justify-content-between g-0 text-white-50">
-            <div class="col-lg-4 col-md-6">
-                <h3>code</h3>
-                <ul>
-                    <li>code</li>
-                    <li>code</li>
-                    <li>code</li>
-                    <li>code</li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <h3>code</h3>
-                <ul>
-                    <li>code</li>
-                    <li>code</li>
-                    <li>code</li>
-                    <li>code</li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <h3>code</h3>
-                <ul>
-                    <li>code</li>
-                    <li>code</li>
-                    <li>code</li>
-                    <li>code</li>
-                </ul>
-            </div>
+        <div class="text-center">
+            <h5 class="text-white mb-4">
+                Hazem Lenin
+            </h5>
+            <span class="text-white-50">
+                &copy; 2020 Hazem Lenin. All rights reserved.
+            </span>
         </div>
     </footer>
 </body>

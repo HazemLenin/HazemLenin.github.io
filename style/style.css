@@ -15,8 +15,6 @@
 
 .sidenav {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 40%;
   height: 100vh;
   -webkit-transform: translateX(-120%);
@@ -234,20 +232,29 @@ ul.skills li.list-skill#react {
 }
 
 .contact-link:nth-child(3):hover {
+  -webkit-box-shadow: 3px 3px 3px #eeeeee;
+          box-shadow: 3px 3px 3px #eeeeee;
+}
+
+.contact-link:nth-child(3):hover i {
+  color: #eeeeee;
+}
+
+.contact-link:nth-child(4):hover {
   -webkit-box-shadow: 3px 3px 3px #25D366;
           box-shadow: 3px 3px 3px #25D366;
 }
 
-.contact-link:nth-child(3):hover i {
+.contact-link:nth-child(4):hover i {
   color: #25D366;
 }
 
-.contact-link:nth-child(4):hover {
+.contact-link:nth-child(5):hover {
   -webkit-box-shadow: 3px 3px 3px #e40b0b;
           box-shadow: 3px 3px 3px #e40b0b;
 }
 
-.contact-link:nth-child(4):hover i {
+.contact-link:nth-child(5):hover i {
   color: #e40b0b;
 }
 

@@ -129,14 +129,13 @@ let typing = document.getElementById("typing");
 let cursor = document.getElementById("cursor");
 let txt = typing.innerText;
 let skills = [
-    'HTML',
-    'CSS',
+    'Web',
     'JS',
     'SQL',
     'Python',
     'Java',
     'Ruby on rails',
-    'ReactJS & native',
+    'ReactJS',
 ];
 
 let skillsIndex = 0; // which word we are in now

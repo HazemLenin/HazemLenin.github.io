@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+html {
+    font-family: 'Raleway', sans-serif;
+    @apply bg-gradient-to-r from-indigo-500 to-blue-700;
+    -webkit-animation: animate-bg 5s ease infinite;
+    -moz-animation: animate-bg 5s ease infinite;
+    -o-animation: animate-bg 5s ease infinite;
+    animation: animate-bg 5s ease infinite;
+    background-size: 400%;
+}
+
+@keyframes animate-bg {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply inline-block rounded text-center font-semibold h-10 p-2 cursor-pointer transition-all;
+    }
+    
+    .btn-primary {
+        @apply bg-indigo-500 text-white hover:bg-indigo-600;
+    }
+
+    .btn-white {
+        @apply bg-white text-black;
+    }
+
+    .skills-wrapper {
+        perspective: 1000px;
+        /* border: solid green 1px; */
+    }
+
+    .skills {
+        @apply relative w-96 h-96;
+    }
+
+    .skill {
+        @apply absolute font-bold text-sky-400 text-xl;
+        text-shadow: 0 0 5px rgb(56 189 248);
+    }
+
+    .skill:nth-child(1) {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .skill:nth-child(2) {
+        top: 30%;
+        right: 0;
+    }
+
+    .skill:nth-child(3) {
+        bottom: 20%;
+        right: 0;
+    }
+
+    .skill:nth-child(4) {
+        bottom: 20%;
+        left: 0;
+    }
+
+    .skill:nth-child(5) {
+        top: 30%;
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+    .projects {
+        @apply lg:grid md:grid lg:grid-cols-3 md:grid-cols-2 gap-5;
+    }
+
+    .project {
+        @apply text-black bg-gray-50 rounded-lg p-5 my-4 cursor-pointer shadow-lg hover:scale-110 transition-all z-10;
+    }
+    
+    .social-nav {
+        @apply flex justify-between;
+    }
+
+    .social {
+        @apply text-4xl cursor-pointer translate-y-2 hover:translate-y-0 transition-all;
+    }
+
+    .blob {
+        @apply absolute hidden lg:block;
+    }
+
+    .blob-green {
+        top: 0;
+        right: 5%;
+        width: 700px;
+        opacity:0.4;
+        z-index: -1;
+    }
+
+    .blob-red {
+        top: 20%;
+        left: 0;
+        width: 700px;
+        opacity:0.4;
+        z-index: -1;
+    }
+}
+
+@layer base {
+    section {
+        @apply px-20 py-10;
+    }
+
+    form input, form textarea {
+        @apply text-black p-2 rounded ring-2 caret-indigo-500 outline-none;
+    }
+}
+

@@ -4,3 +4,6 @@
 [submodule "qr-code-component-challenge-on-frontend-mentor"]
 	path = qr-code-component-challenge-on-frontend-mentor
 	url = https://github.com/HazemLenin/qr-code-component-challenge-on-frontend-mentor
+[submodule "huddle-landing-page-with-curved-sections-solution"]
+	path = huddle-landing-page-with-curved-sections-solution
+	url = https://github.com/HazemLenin/huddle-landing-page-with-curved-sections-solution.git

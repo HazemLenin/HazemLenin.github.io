@@ -2,93 +2,205 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-
-
-html {
-    font-family: 'Raleway', sans-serif;
-    @apply bg-gradient-to-r from-indigo-500 to-blue-700;
-    -webkit-animation: animate-bg 5s ease infinite;
-    -moz-animation: animate-bg 5s ease infinite;
-    -o-animation: animate-bg 5s ease infinite;
-    animation: animate-bg 5s ease infinite;
-    background-size: 400%;
-}
-
-@keyframes animate-bg {
-    0%, 100% {
-        background-position: 0% 50%;
+@layer base {
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        /* background: transparent; */
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        @apply bg-indigo-500;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-indigo-600;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+        font-family: 'Raleway', sans-serif;
+        @apply bg-gradient-to-r from-indigo-500 to-blue-700;
+        -webkit-animation: animate-bg 5s ease infinite;
+        -moz-animation: animate-bg 5s ease infinite;
+        -o-animation: animate-bg 5s ease infinite;
+        animation: animate-bg 5s ease infinite;
+        background-size: 400%;
     }
 
-    50% {
-        background-position: 100% 50%;
+    section {
+        @apply px-10 lg:px-20 py-20;
+    }
+
+    form input, form textarea {
+        @apply text-black p-2 rounded ring-2 caret-indigo-500 outline-none;
+    }
+    
+    @keyframes animate-bg {
+        0%, 100% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
     }
 }
 
 @layer components {
+    .navbar {
+        @apply overflow-hidden;
+    }
+
+    .navbar.sidebar-opened {
+        @apply overflow-visible
+    }
+
+    .sidebar {
+        @apply absolute top-0 left-0 w-60 h-screen bg-transparent transition-all duration-300;
+        transform: translateX(-60%);
+    }
+
+    .sidebar.active {
+        @apply bg-indigo-700/50;
+        transform: translateX(0);
+    }
+
+    .burger {
+        @apply block lg:hidden relative w-10 h-10 ml-auto;
+    }
+
+    .burger span {
+        position: absolute;
+        background: white;
+        border-radius: 5px;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all .3s;
+    }
+
+    .burger span:first-child {
+        top: 10%;
+    }
+
+    .burger span:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .burger span:last-child {
+        bottom: 10%;
+    }
+
+    .burger.active span:first-child {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active span:last-child {
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
     .btn {
         @apply inline-block rounded text-center font-semibold h-10 p-2 cursor-pointer transition-all;
     }
     
     .btn-primary {
-        @apply bg-indigo-500 text-white hover:bg-indigo-600;
+        @apply bg-indigo-600 text-white hover:bg-indigo-700;
+    }
+
+    .btn-outline-primary {
+        @apply mt-3 lg:mt-0 p-2 border-4 border-indigo-500 rounded-3xl text-black lg:text-white hover:bg-indigo-500 hover:text-white transition-all;
     }
 
     .btn-white {
         @apply bg-white text-black;
     }
 
-    .skills-wrapper {
-        perspective: 1000px;
-        /* border: solid green 1px; */
+    .btn-outline-white {
+        @apply block w-40 p-2 rounded-3xl border-2 border-white text-white hover:bg-white hover:text-black transition-all;
     }
 
-    .skills {
-        @apply relative w-96 h-96;
+    .summary {
+        padding: 0;
+        overflow: hidden;
     }
 
-    .skill {
-        @apply absolute font-bold text-sky-400 text-xl;
-        text-shadow: 0 0 5px rgb(56 189 248);
+    .summary::before {
+        content: '';
+        display: block;
+        border-top: solid transparent 100px;
+        border-right: solid white 100vw;
+        margin-bottom: -1px;
     }
 
-    .skill:nth-child(1) {
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
+    .summary::after {
+        content: '';
+        display: block;
+        border-top: solid white 100px;
+        border-right: solid transparent 100vw;
+        margin-top: -1px;
     }
 
-    .skill:nth-child(2) {
-        top: 30%;
-        right: 0;
-    }
 
-    .skill:nth-child(3) {
-        bottom: 20%;
-        right: 0;
-    }
-
-    .skill:nth-child(4) {
-        bottom: 20%;
-        left: 0;
-    }
-
-    .skill:nth-child(5) {
-        top: 30%;
-        left: 0;
-        transform: translateX(-50%);
-    }
-
-    .projects {
-        @apply lg:grid md:grid lg:grid-cols-3 md:grid-cols-2 gap-5;
+    .projects-grid {
+        @apply flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-20;
     }
 
     .project {
-        @apply text-black bg-gray-50 rounded-lg p-5 my-4 cursor-pointer shadow-lg hover:scale-110 transition-all z-10;
+        @apply relative lg:h-60 bg-white lg:bg-transparent overflow-hidden rounded-xl shadow-lg;
     }
     
-    .social-nav {
-        @apply flex justify-between;
+    .project img {
+        @apply w-full lg:h-full lg:object-cover;
+    }
+
+    .project h3 {
+        @apply w-full;
+    }
+    
+    .project p {
+        @apply text-sm;
+    }
+    
+    /* Fade in effect start */
+
+    .project figcaption { 
+        @apply flex flex-col justify-between items-center opacity-100 p-5 lg:absolute lg:top-0 lg:left-0 lg:h-full lg:bg-slate-800 lg:text-white lg:opacity-0 hover:opacity-100 lg:transition-opacity;
+    }
+
+    /* Fade in effect end */
+
+    /* slide up effect start commented */
+
+    /* .project figcaption {
+        @apply flex flex-col justify-between items-center p-5 lg:absolute lg:top-0 lg:left-0 lg:h-full lg:bg-slate-800 lg:text-white lg:transition-all lg:duration-300 lg:mt-60;
+    }
+
+    .project:hover figcaption {
+        @apply lg:mt-0;
+    } */
+
+    /* slide up effect end commented */
+
+    .project figcaption a {
+        @apply text-center;
+    }
+
+    .project h3 {
+        @apply text-2xl mb-2;
     }
 
     .social {
@@ -103,7 +215,7 @@ html {
         top: 0;
         right: 5%;
         width: 700px;
-        opacity:0.4;
+        opacity: 0.5;
         z-index: -1;
     }
 
@@ -111,18 +223,14 @@ html {
         top: 20%;
         left: 0;
         width: 700px;
-        opacity:0.4;
+        opacity: 0.5;
         z-index: -1;
     }
-}
 
-@layer base {
-    section {
-        @apply px-20 py-10;
-    }
-
-    form input, form textarea {
-        @apply text-black p-2 rounded ring-2 caret-indigo-500 outline-none;
+    .blob-purple {
+        top: -10%;
+        left: -10%;
+        width: 70%;
+        opacity: 0.6;
     }
 }
-

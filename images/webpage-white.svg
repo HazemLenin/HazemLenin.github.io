@@ -1,0 +1,16 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_13" d="m0,0l400,0l0,300l-400,0l0,-300z" opacity="undefined" stroke-width="4" stroke="#ffffff" fill="none"/>
+  <rect id="svg_26" height="240" width="380" y="50" x="9.58333" stroke-width="2" stroke="#ffffff" fill="none"/>
+  <rect id="svg_18" height="10" width="10" y="10" x="360" stroke-width="2" stroke="#ffffff" fill="none"/>
+  <rect id="svg_20" height="10" width="10" y="10" x="380" stroke-width="2" stroke="#ffffff" fill="none"/>
+  <rect id="svg_22" height="10" width="10" y="10" x="340" stroke-width="2" stroke="#ffffff" fill="none"/>
+  <rect id="svg_23" height="10" width="380" y="30" x="10" stroke-width="2" stroke="#ffffff" fill="none"/>
+  <rect id="svg_25" height="30" width="360" y="59.52381" x="20" stroke-width="2" stroke="#ffffff" fill="none"/>
+  <rect stroke="#ffffff" id="svg_27" height="130" width="250" y="100" x="20" stroke-width="2" fill="none"/>
+  <rect id="svg_28" height="130" width="100" y="100.41667" x="280" stroke-width="2" stroke="#ffffff" fill="none"/>
+  <rect stroke="#ffffff" id="svg_29" height="40" width="360" y="240" x="20.41667" stroke-width="2" fill="none"/>
+ </g>
+
+</svg>

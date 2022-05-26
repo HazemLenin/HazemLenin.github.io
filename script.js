@@ -1,4 +1,33 @@
-AOS.init();
+// AOS initializer
+AOS.init({
+    disable: /bot|crawler|spider|crawling/i.test(navigator.userAgent), // Disable AOS if the visitor is a web crawler
+    once: true
+});
+
+
+const nav = document.getElementById('nav');
+
+changeOpacityOnScroll();
+
+window.addEventListener('scroll', changeOpacityOnScroll);
+
+function changeOpacityOnScroll(e) {
+    if (window.scrollY > 0) {
+        nav.style.opacity = 1;
+    } else {
+        nav.style.opacity = 0;
+    }
+}
+
+const sidebar = document.getElementById('sidebar');
+const sidebarBtn = document.getElementById('sidebar-btn');
+
+sidebarBtn.onclick = () => {
+    nav.classList.toggle('sidebar-opened');
+    sidebar.classList.toggle('active');
+    sidebarBtn.classList.toggle('active');
+}
+
 const blobs = document.getElementsByClassName('blob');
 
 const section1 = document.getElementById('section-1');
@@ -10,36 +39,4 @@ section1.addEventListener('mousemove', e => {
         const y = (window.innerHeight - (e.pageY * speed)) / 100;
         blob.style.transform = `translate(${x}px, ${y}px)`;
     }
-});
-
-const nav = document.getElementById('nav');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 0) {
-        nav.style.opacity = 1;
-    } else {
-        nav.style.opacity = 0;
-    }
-})
-
-// SKILLS ROTATION
-
-let tracker = document.getElementById('tracker');
-let skills = document.getElementById('skills');
-
-tracker.addEventListener('mousemove', (e) => {
-  // get percentage (current cursor, total size)
-  let x = e.pageX - (tracker.offsetLeft + (tracker.offsetWidth / 2));
-  let y = e.pageY - (tracker.offsetTop + (tracker.offsetHeight / 2));
-  
-  x = x / (tracker.offsetWidth / 2);
-  y = y / (tracker.offsetHeight / 2);
-  
-  // percentage * 45 -> max rotate
-  
-  let rotatedY = x * 45;
-  let rotatedX = y * -45;
-  
-  // apply style
-  skills.style.transform = `rotateX(${rotatedX}deg) rotateY(${rotatedY}deg`
 });

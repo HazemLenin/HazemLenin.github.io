@@ -1,6 +1,6 @@
 [submodule "interactive-rating-component-challenge-on-frontend-mentor"]
 	path = interactive-rating-component-challenge-on-frontend-mentor
-	url = https://github.com/HazemLenin/interactive-rating-component-challenge-on-frontend-mentor
+	url = https://github.com/HazemLenin/interactive-rating-component-challenge-on-frontend-mentor.git
 [submodule "qr-code-component-challenge-on-frontend-mentor"]
 	path = qr-code-component-challenge-on-frontend-mentor
 	url = https://github.com/HazemLenin/qr-code-component-challenge-on-frontend-mentor

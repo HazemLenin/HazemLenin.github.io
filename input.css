@@ -26,31 +26,35 @@
     html {
         scroll-behavior: smooth;
         font-family: 'Raleway', sans-serif;
+    }
+
+    body {
         @apply bg-gradient-to-r from-indigo-500 to-blue-700;
-        -webkit-animation: animate-bg 5s ease infinite;
-        -moz-animation: animate-bg 5s ease infinite;
-        -o-animation: animate-bg 5s ease infinite;
-        animation: animate-bg 5s ease infinite;
-        background-size: 400%;
+        /* -webkit-animation: animate-bg 5s ease infinite; */
+        /* -moz-animation: animate-bg 5s ease infinite; */
+        /* -o-animation: animate-bg 5s ease infinite; */
+        /* animation: animate-bg 10s ease infinite;
+        background-size: 200%; */
+    }
+
+    @keyframes animate-bg {
+        0%, 100% {
+            background-position: 0% 50%;
+        }
+        
+        50% {
+            background-position: 100% 50%;
+        }
     }
 
     section {
         @apply px-10 lg:px-20 py-20;
     }
-
+    
     form input, form textarea {
         @apply text-black p-2 rounded ring-2 caret-indigo-500 outline-none;
     }
-    
-    @keyframes animate-bg {
-        0%, 100% {
-            background-position: 0% 50%;
-        }
 
-        50% {
-            background-position: 100% 50%;
-        }
-    }
 }
 
 @layer components {

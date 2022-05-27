@@ -452,13 +452,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 html {
   scroll-behavior: smooth;
   font-family: 'Raleway', sans-serif;
+}
+
+body {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: #6366f1;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(99 102 241 / 0));
   --tw-gradient-to: #1d4ed8;
-  -webkit-animation: animate-bg 5s ease infinite;
-  animation: animate-bg 5s ease infinite;
-  background-size: 400%;
+  /* -webkit-animation: animate-bg 5s ease infinite; */
+  /* -moz-animation: animate-bg 5s ease infinite; */
+  /* -o-animation: animate-bg 5s ease infinite; */
+  /* animation: animate-bg 10s ease infinite;
+        background-size: 200%; */
+}
+
+@-webkit-keyframes animate-bg {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes animate-bg {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 section {
@@ -486,26 +511,6 @@ form input, form textarea {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-@-webkit-keyframes animate-bg {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-@keyframes animate-bg {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
 }
 
 *, ::before, ::after {

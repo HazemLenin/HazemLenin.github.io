@@ -459,31 +459,6 @@ body {
   --tw-gradient-from: #6366f1;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(99 102 241 / 0));
   --tw-gradient-to: #1d4ed8;
-  /* -webkit-animation: animate-bg 5s ease infinite; */
-  /* -moz-animation: animate-bg 5s ease infinite; */
-  /* -o-animation: animate-bg 5s ease infinite; */
-  /* animation: animate-bg 10s ease infinite;
-        background-size: 200%; */
-}
-
-@-webkit-keyframes animate-bg {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-@keyframes animate-bg {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
 }
 
 section {
@@ -616,6 +591,8 @@ form input, form textarea {
   }
 }
 
+/* navbar & sidebar */
+
 .navbar {
   overflow: hidden;
 }
@@ -693,6 +670,8 @@ form input, form textarea {
   transform: translateY(-50%) rotate(-45deg);
 }
 
+/* buttons */
+
 .btn {
   display: inline-block;
   height: 2.5rem;
@@ -769,10 +748,7 @@ form input, form textarea {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.summary {
-  padding: 0;
-  overflow: hidden;
-}
+/* summary section */
 
 .summary::before {
   content: '';
@@ -789,6 +765,8 @@ form input, form textarea {
   border-right: solid transparent 100vw;
   margin-top: -1px;
 }
+
+/* projects section */
 
 .projects-grid {
   display: flex;
@@ -931,6 +909,8 @@ form input, form textarea {
     display: block;
   }
 }
+
+/* blobs */
 
 .blob-green {
   top: 0;

@@ -30,21 +30,6 @@
 
     body {
         @apply bg-gradient-to-r from-indigo-500 to-blue-700;
-        /* -webkit-animation: animate-bg 5s ease infinite; */
-        /* -moz-animation: animate-bg 5s ease infinite; */
-        /* -o-animation: animate-bg 5s ease infinite; */
-        /* animation: animate-bg 10s ease infinite;
-        background-size: 200%; */
-    }
-
-    @keyframes animate-bg {
-        0%, 100% {
-            background-position: 0% 50%;
-        }
-        
-        50% {
-            background-position: 100% 50%;
-        }
     }
 
     section {
@@ -58,6 +43,7 @@
 }
 
 @layer components {
+    /* navbar & sidebar */
     .navbar {
         @apply overflow-hidden;
     }
@@ -117,6 +103,8 @@
         transform: translateY(-50%) rotate(-45deg);
     }
 
+    /* buttons */
+
     .btn {
         @apply inline-block rounded text-center font-semibold h-10 p-2 cursor-pointer transition-all;
     }
@@ -130,17 +118,14 @@
     }
 
     .btn-white {
-        @apply bg-white text-black;
+        @apply bg-white text-black hover:bg-gray-500;
     }
 
     .btn-outline-white {
         @apply block w-40 p-2 rounded-3xl border-2 border-white text-white hover:bg-white hover:text-black transition-all;
     }
 
-    .summary {
-        padding: 0;
-        overflow: hidden;
-    }
+    /* summary section */
 
     .summary::before {
         content: '';
@@ -158,6 +143,7 @@
         margin-top: -1px;
     }
 
+    /* projects section */
 
     .projects-grid {
         @apply flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-20;
@@ -214,6 +200,8 @@
     .blob {
         @apply absolute hidden lg:block;
     }
+
+    /* blobs */
 
     .blob-green {
         top: 0;

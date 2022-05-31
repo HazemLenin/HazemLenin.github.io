@@ -7,3 +7,6 @@
 [submodule "huddle-landing-page-with-curved-sections-solution"]
 	path = huddle-landing-page-with-curved-sections-solution
 	url = https://github.com/HazemLenin/huddle-landing-page-with-curved-sections-solution.git
+[submodule "sunnyside-agency-landing-page-solution"]
+	path = sunnyside-agency-landing-page-solution
+	url = https://github.com/HazemLenin/sunnyside-agency-landing-page-solution.git

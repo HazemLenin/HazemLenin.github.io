@@ -748,9 +748,9 @@ form input, form textarea {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-/* summary section */
+/* about section */
 
-.summary::before {
+.about::before {
   content: '';
   display: block;
   border-top: solid transparent 100px;
@@ -758,7 +758,7 @@ form input, form textarea {
   margin-bottom: -1px;
 }
 
-.summary::after {
+.about::after {
   content: '';
   display: block;
   border-top: solid white 100px;

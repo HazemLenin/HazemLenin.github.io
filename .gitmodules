@@ -10,3 +10,6 @@
 [submodule "sunnyside-agency-landing-page-solution"]
 	path = sunnyside-agency-landing-page-solution
 	url = https://github.com/HazemLenin/sunnyside-agency-landing-page-solution.git
+[submodule "daily-cafe"]
+	path = daily-cafe
+	url = https://github.com/HazemLenin/daily-cafe

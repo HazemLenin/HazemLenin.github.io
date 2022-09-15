@@ -16,3 +16,6 @@
 [submodule "dokan-landing-page"]
 	path = dokan-landing-page
 	url = https://github.com/HazemLenin/dokan-landing-page.git
+[submodule "candica"]
+	path = candica
+	url = https://github.com/HazemLenin/candica.git

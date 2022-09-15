@@ -1,151 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ambitious Software Developer!">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Ambitious Software Developer!" />
 
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./site.webmanifest" />
 
-    <meta name="theme-color" content="#6366f1">
+		<meta name="theme-color" content="#6366f1" />
 
-    <title>Hazem Lenin</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./build.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <nav class="navbar fixed t-0 left-0 w-full h-20 bg-black/25 text-white flex justify-between items-center gap-10 px-10 lg:px-20 py-4 z-50 transition-opacity" id="nav">
-        <div class="sidebar" id="sidebar">
-            <div class="px-7 py-5">
-                <button class="burger" id="sidebar-btn" aria-label="sidebar button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            <div class="p-5">
-                <ul>
-                    <li class="mb-10"><a href="#about">About</a></li>
-                    <li class="mb-10"><a href="#projects">Projects</a></li>
-                    <li class="mb-10"><a href="#contact">Contact</a></li>        
-                </ul>
-            </div>
-        </div>
-        <span class="ml-auto lg:ml-0 font-bold text-xl">Hazem</span>
-        <ul class="hidden lg:flex justify-between ml-auto gap-4">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <!-- HERO START -->
-        <section class="hero text-white h-screen" id="section-1">
+		<title>Hazem Lenin</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./build.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<nav
+			class="navbar fixed t-0 left-0 w-full h-20 bg-black/25 text-white flex justify-between items-center gap-10 px-10 lg:px-20 py-4 z-50 transition-opacity"
+			id="nav"
+		>
+			<div class="sidebar" id="sidebar">
+				<div class="px-7 py-5">
+					<button class="burger" id="sidebar-btn" aria-label="sidebar button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<div class="p-5">
+					<ul>
+						<li class="mb-10"><a href="#about">About</a></li>
+						<li class="mb-10"><a href="#projects">Projects</a></li>
+						<li class="mb-10"><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<span class="ml-auto lg:ml-0 font-bold text-xl">Hazem</span>
+			<ul class="hidden lg:flex justify-between ml-auto gap-4">
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<main>
+			<!-- HERO START -->
+			<section class="hero text-white h-screen" id="section-1">
+				<div class="blob blob-green" data-speed="5">
+					<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+						<path
+							fill="#9EF0F0"
+							d="M47.5,-52.5C62.6,-44,76.4,-30,78.8,-14.2C81.2,1.5,72.1,19,60.9,31.9C49.6,44.9,36,53.4,20.7,60.7C5.3,68,-11.9,74.1,-23.6,68.3C-35.3,62.6,-41.5,45.1,-45.7,30.1C-49.8,15.2,-51.9,2.8,-53.7,-13.4C-55.5,-29.6,-57,-49.6,-48,-59.1C-38.9,-68.6,-19.5,-67.6,-1.6,-65.6C16.2,-63.7,32.5,-60.9,47.5,-52.5Z"
+							transform="translate(100 100)"
+						/>
+					</svg>
+				</div>
 
-            <div class="blob blob-green" data-speed="5">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#9EF0F0" d="M47.5,-52.5C62.6,-44,76.4,-30,78.8,-14.2C81.2,1.5,72.1,19,60.9,31.9C49.6,44.9,36,53.4,20.7,60.7C5.3,68,-11.9,74.1,-23.6,68.3C-35.3,62.6,-41.5,45.1,-45.7,30.1C-49.8,15.2,-51.9,2.8,-53.7,-13.4C-55.5,-29.6,-57,-49.6,-48,-59.1C-38.9,-68.6,-19.5,-67.6,-1.6,-65.6C16.2,-63.7,32.5,-60.9,47.5,-52.5Z" transform="translate(100 100)" />
-                </svg>
-            </div>
+				<div class="blob blob-red" data-speed="10">
+					<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+						<path
+							fill="#FF0066"
+							d="M50.7,-52.5C66.9,-46.8,82.1,-32,87.4,-13.7C92.7,4.6,88,26.4,75.5,39.3C62.9,52.1,42.4,56.1,23,63.3C3.5,70.4,-14.8,80.7,-31.5,78.2C-48.1,75.7,-63.1,60.4,-69.7,43.1C-76.4,25.7,-74.8,6.4,-71.1,-12.2C-67.5,-30.9,-61.7,-48.8,-49.5,-55.2C-37.4,-61.6,-18.7,-56.5,-0.7,-55.6C17.2,-54.8,34.5,-58.2,50.7,-52.5Z"
+							transform="translate(100 100)"
+						/>
+					</svg>
+				</div>
 
-            <div class="blob blob-red" data-speed="10">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#FF0066" d="M50.7,-52.5C66.9,-46.8,82.1,-32,87.4,-13.7C92.7,4.6,88,26.4,75.5,39.3C62.9,52.1,42.4,56.1,23,63.3C3.5,70.4,-14.8,80.7,-31.5,78.2C-48.1,75.7,-63.1,60.4,-69.7,43.1C-76.4,25.7,-74.8,6.4,-71.1,-12.2C-67.5,-30.9,-61.7,-48.8,-49.5,-55.2C-37.4,-61.6,-18.7,-56.5,-0.7,-55.6C17.2,-54.8,34.5,-58.2,50.7,-52.5Z" transform="translate(100 100)" />
-                </svg>
-            </div>
+				<div
+					class="flex justify-center items-center gap-5 h-full text-center flex-col"
+				>
+					<h1
+						class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl"
+						data-aos="fade-in"
+						data-aos-delay="500"
+					>
+						Hazem Lenin
+					</h1>
+					<h2 class="text-lg" data-aos="fade-in" data-aos-delay="1000">
+						Ambitious Software Developer!
+					</h2>
+					<a href="#contact" class="btn-outline-white">Contact Me</a>
+				</div>
+			</section>
+			<!-- HERO END -->
 
-            <div class="flex justify-center items-center gap-5 h-full text-center flex-col">
-                <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl" data-aos="fade-in" data-aos-delay="500">
-                    Hazem Lenin
-                </h1>
-                <h2 class="text-lg" data-aos="fade-in" data-aos-delay="1000">
-                    Ambitious Software Developer!
-                </h2>
-                <a href="#contact" class="btn-outline-white">Contact Me</a>
-            </div>
+			<!-- ABOUT START -->
+			<section class="about p-0 overflow-hidden" id="about">
+				<div
+					class="flex flex-col md:flex-row justify-between gap-20 items-center px-10 lg:px-20 py-10 md:py-20 bg-white"
+				>
+					<div class="md:w-3/4">
+						<h2 class="text-4xl mb-10">About</h2>
+						<p class="text-lg my-2">
+							Web Developer 👨‍💻 🕸 &amp; Student at Alexandria University 🏫.
+							Started programming in 2018 and joined Pixel Stamp startup in
+							2020.
+							<br />
+							I mainly use <span class="text-green-900">Django</span> and
+							<span class="text-red-600">Ruby On Rails</span> frameworks to
+							build web applications with good knowledge of front-end
+							technologies such as <span class="text-sky-700">ReactJS</span>.
+						</p>
+					</div>
 
-        </section>
-        <!-- HERO END -->
+					<div class="md:w-1/3" data-aos="fade-up" data-aos-duration="1000">
+						<img
+							class="w-full h-full"
+							src="./images/webpage-black-colored.svg"
+							alt="webpage"
+						/>
+					</div>
+				</div>
+			</section>
+			<!-- ABOUT END -->
 
-        <!-- ABOUT START -->
-        <section class="about p-0 overflow-hidden" id="about">
-            <div class="flex flex-col md:flex-row justify-between gap-20 items-center px-10 lg:px-20 py-10 md:py-20 bg-white">
+			<!-- PROJECTS START -->
+			<section class="projects relative p-0" id="projects">
+				<div class="blob blob-purple" data-speed="0">
+					<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+						<path
+							fill="#F1C21B"
+							d="M57.4,-17.7C62.7,-2.3,47.2,20.7,27.8,33.7C8.4,46.7,-14.9,49.6,-29.5,39.3C-44.2,29,-50.1,5.4,-43.7,-11.5C-37.4,-28.3,-18.7,-38.4,3.7,-39.6C26,-40.8,52.1,-33.1,57.4,-17.7Z"
+							transform="translate(100 100)"
+						/>
+					</svg>
+				</div>
+				<div class="relative px-10 lg:px-20 py-20">
+					<h2 class="text-4xl text-white text-center mb-10">Projects</h2>
+					<div class="projects-grid">
+						<figure class="project">
+							<img
+								src="./minified/images/company-attendance-screenshot.webp"
+								alt="Company attendance screenshot"
+							/>
+							<figcaption>
+								<h3>Company Attendance</h3>
+								<p>
+									Company Attendance is an application made with Django and
+									ReactJS for companies to record their employees attending
+									hours.
+								</p>
+								<a
+									class="btn-outline-primary"
+									href="https://company-attendance.herokuapp.com/"
+									target="_blank"
+									>Go To Website</a
+								>
+							</figcaption>
+						</figure>
 
-                <div class="md:w-3/4">
-                    <h2 class="text-4xl mb-10">About</h2>
-                    <p class="text-lg my-2">
-                        Web Developer 👨‍💻 🕸 &amp; Student at Alexandria University 🏫.
-                        Started programming in 2018 and joined Pixel Stamp startup in 2020.
-                        <br>
-                        I mainly use <span class="text-green-900">Django</span> and <span class="text-red-600">Ruby On Rails</span> frameworks to build web applications with good knowledge of front-end technologies such as <span class="text-sky-700">ReactJS</span>.
-                    </p>
-                </div>
-                
-                <div class="md:w-1/3" data-aos="fade-up" data-aos-duration="1000">
-                    <img class="w-full h-full" src="./images/webpage-black-colored.svg" alt="webpage">
-                </div>
-            </div>
-        </section>
-        <!-- ABOUT END -->
+						<figure class="project">
+							<!-- <img src="./minified/images/company-attendance-screenshot.webp" alt="Company attendance screenshot"> -->
+							<figcaption>
+								<h3>Candica</h3>
+								<p>
+									Landing page for candy shop called Candica with 8-bit theme.
+								</p>
+								<a
+									class="btn-outline-primary"
+									href="https://hazemlenin.github.io/candica"
+									target="_blank"
+									>Go To Website</a
+								>
+							</figcaption>
+						</figure>
 
-        <!-- PROJECTS START -->
-        <section class="projects relative p-0" id="projects">
-            <div class="blob blob-purple" data-speed="0">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#F1C21B" d="M57.4,-17.7C62.7,-2.3,47.2,20.7,27.8,33.7C8.4,46.7,-14.9,49.6,-29.5,39.3C-44.2,29,-50.1,5.4,-43.7,-11.5C-37.4,-28.3,-18.7,-38.4,3.7,-39.6C26,-40.8,52.1,-33.1,57.4,-17.7Z" transform="translate(100 100)" />
-                </svg>
-            </div>
-            <div class="relative px-10 lg:px-20 py-20">
-                <h2 class="text-4xl text-white text-center mb-10">Projects</h2>
-                <div class="projects-grid">
-                    <figure class="project">
-                        <img src="./minified/images/company-attendance-screenshot.webp" alt="Company attendance screenshot">
-                        <figcaption>
-                            <h3>Company Attendance</h3>
-                            <p>Company Attendance is an application made with Django and ReactJS for companies to record their employees attending hours.</p>
-                            <a class="btn-outline-primary" href="https://company-attendance.herokuapp.com/" target="_blank">Go To Website</a>
-                        </figcaption>
-                    </figure>
+						<figure class="project">
+							<img
+								src="./minified/images/rails-books-screenshot.webp"
+								alt="Rails books screenshot"
+							/>
+							<figcaption>
+								<h3>Rails Books</h3>
+								<p>
+									Rails Books is an book club made with ruby on rails and
+									tailwind which readers can mark which books they had read and
+									write reviews about them.
+								</p>
+								<a
+									class="btn-outline-primary"
+									href="https://rails--books.herokuapp.com/"
+									target="_blank"
+									>Go To Website</a
+								>
+							</figcaption>
+						</figure>
 
-                    <figure class="project">
-                        <img src="./minified/images/rails-books-screenshot.webp" alt="Rails books screenshot">
-                        <figcaption>
-                            <h3>Rails Books</h3>
-                            <p>Rails Books is an book club made with ruby on rails and tailwind which readers can mark which books they had read and write reviews about them.</p>
-                            <a class="btn-outline-primary" href="https://rails--books.herokuapp.com/" target="_blank">Go To Website</a>
-                        </figcaption>
-                    </figure>
+						<figure class="project">
+							<img
+								src="./minified/images/huddle-screenshot.webp"
+								alt="huddle screenshot"
+							/>
+							<figcaption>
+								<h3>Huddle Landing Page</h3>
+								<p>
+									Huddle landing page is a challenge on Frontend mentor website,
+									which is a website for front end developers to work on their
+									skills and perform better in real world front end projects.
+								</p>
+								<a
+									class="btn-outline-primary"
+									href="https://hazemlenin.github.io/huddle-landing-page-with-curved-sections-solution/"
+									target="_blank"
+									>Go To Website</a
+								>
+							</figcaption>
+						</figure>
 
-                    <figure class="project">
-                        <img src="./minified/images/huddle-screenshot.webp" alt="huddle screenshot">
-                        <figcaption>
-                            <h3>Huddle Landing Page</h3>
-                            <p>Huddle landing page is a challenge on Frontend mentor website, which is a website for front end developers to work on their skills and perform better in real world front end projects.</p>
-                            <a class="btn-outline-primary" href="https://hazemlenin.github.io/huddle-landing-page-with-curved-sections-solution/" target="_blank">Go To Website</a>
-                        </figcaption>
-                    </figure>
+						<figure class="project">
+							<img
+								src="./minified/images/daily-cafe-screenshot.webp"
+								alt="huddle screenshot"
+							/>
+							<figcaption>
+								<h3>Daily Café Landing Page</h3>
+								<p>
+									Landing page made with HTML and SCSS with animations and
+									sliders.
+								</p>
+								<a
+									class="btn-outline-primary"
+									href="https://hazemlenin.github.io/daily-cafe/"
+									target="_blank"
+									>Go To Website</a
+								>
+							</figcaption>
+						</figure>
 
-                    <figure class="project">
-                        <img src="./minified/images/daily-cafe-screenshot.webp" alt="huddle screenshot">
-                        <figcaption>
-                            <h3>Daily Café Landing Page</h3>
-                            <p>Landing page made with HTML and SCSS with animations and sliders.</p>
-                            <a class="btn-outline-primary" href="https://hazemlenin.github.io/daily-cafe/" target="_blank">Go To Website</a>
-                        </figcaption>
-                    </figure>
-                    
-                    <!-- <figure class="project">
+						<!-- <figure class="project">
                         <img src="./minified/images/interactive-rating-component-screenshot.webp" alt="Interactive rating component screenshot">
                         <figcaption>
                             <h3>Interactive Rating Component</h3>
@@ -154,7 +268,7 @@
                         </figcaption>
                     </figure> -->
 
-                    <!-- <figure class="project">
+						<!-- <figure class="project">
                         <img src="./minified/images/qr-code-component-screenshot.webp" alt="QR code component screenshot">
                         <figcaption>
                             <h3>QR code component</h3>
@@ -163,87 +277,162 @@
                         </figcaption>
                     </figure> -->
 
-                    <figure class="project">
-                        <img src="./minified/images/sunnyside-screenshot.webp" alt="QR code component screenshot">
-                        <figcaption>
-                            <h3>Sunnyside Landing Page</h3>
-                            <p>Sunnyside Landing Page is a challenge on Frontend mentor website, which is a website for front end developers to work on their skills and perform better in real world front end projects.</p>
-                            <a class="btn-outline-primary" href="https://hazemlenin.github.io/sunnyside-agency-landing-page-solution/" target="_blank">Go To Website</a>
-                        </figcaption>
-                    </figure>
+						<figure class="project">
+							<img
+								src="./minified/images/sunnyside-screenshot.webp"
+								alt="QR code component screenshot"
+							/>
+							<figcaption>
+								<h3>Sunnyside Landing Page</h3>
+								<p>
+									Sunnyside Landing Page is a challenge on Frontend mentor
+									website, which is a website for front end developers to work
+									on their skills and perform better in real world front end
+									projects.
+								</p>
+								<a
+									class="btn-outline-primary"
+									href="https://hazemlenin.github.io/sunnyside-agency-landing-page-solution/"
+									target="_blank"
+									>Go To Website</a
+								>
+							</figcaption>
+						</figure>
 
-                    <figure class="project">
-                        <img src="./minified/images/aurora-screenshot.webp" alt="Aurora screenshot">
-                        <figcaption>
-                            <h3>Aurora E-commerce Web Site</h3>
-                            <p>Aurora is an e-commerce web site made with Django and ReactJS for hoodies, jeans and perfumes.</p>
-                            <a class="btn-outline-primary" href="https://aurora-ecommerce.herokuapp.com/" target="_blank">Go To Website</a>
-                        </figcaption>
-                    </figure>
+						<figure class="project">
+							<img
+								src="./minified/images/aurora-screenshot.webp"
+								alt="Aurora screenshot"
+							/>
+							<figcaption>
+								<h3>Aurora E-commerce Web Site</h3>
+								<p>
+									Aurora is an e-commerce web site made with Django and ReactJS
+									for hoodies, jeans and perfumes.
+								</p>
+								<a
+									class="btn-outline-primary"
+									href="https://aurora-ecommerce.herokuapp.com/"
+									target="_blank"
+									>Go To Website</a
+								>
+							</figcaption>
+						</figure>
 
-                    <figure class="project">
-                        <img src="./minified/images/grape-screenshot.webp" alt="Grape screenshot">
-                        <figcaption>
-                            <h3>Grape Chat App</h3>
-                            <p>Grape is an under development chat app made with Django and tailwind for people who want to share their stories and contact each other.</p>
-                            <a class="btn-outline-primary" href="https://github.com/HazemLenin/grape-chat-app/" target="_blank">Go To Repo</a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-        <!-- PROJECTS END -->
+						<figure class="project">
+							<img
+								src="./minified/images/grape-screenshot.webp"
+								alt="Grape screenshot"
+							/>
+							<figcaption>
+								<h3>Grape Chat App</h3>
+								<p>
+									Grape is an under development chat app made with Django and
+									tailwind for people who want to share their stories and
+									contact each other.
+								</p>
+								<a
+									class="btn-outline-primary"
+									href="https://github.com/HazemLenin/grape-chat-app/"
+									target="_blank"
+									>Go To Repo</a
+								>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</section>
+			<!-- PROJECTS END -->
 
-        <!-- CONTACT START -->
-        <section class="bg-white text-black" id="contact">
-            <h2 class="text-4xl text-center mb-10">Let's get in touch</h2>
-            <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-y-20 md:gap-x-20 lg:gap-x-40">
-                <form class="bg-indigo-200 text-black p-8 rounded-lg shadow-lg w-full md:w-1/2">
-                    <div class="bg-indigo-600 text-white text-3xl p-4 text-center rounded">Contact Me</div>
-                    <div class="my-2">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" class="w-full">
-                    </div>
-                    <div class="my-2">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="w-full">
-                    </div>
-                    <div class="my-2">
-                        <label for="message">Message</label>
-                        <textarea id="message" class="w-full"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-full my-2">Send</button>
-                </form>
-                <div class="w-full md:w-1/2">
-                    <h2 class="text-3xl mb-5">You can find me on:</h2>
-                    <div class="flex justify-between lg:w-72">
-                        <a href="https://www.facebook.com/people/Hazem-Lenin/100009117039974/" target="_blank" class="social hover:text-blue-500" aria-label="facebook account">
-                            <i class="fab fa-facebook-f text-center"></i>
-                        </a>
-                        <a href="https://www.instagram.com/hazemlenin/" target="_blank" class="social hover:text-purple-500" aria-label="instagram account">
-                            <i class="fab fa-instagram text-center"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/hazem-lenin-3aa06a227/" target="_blank" class="social hover:text-sky-600" aria-label="linkedin account">
-                            <i class="fa-brands fa-linkedin-in text-center"></i>
-                        </a>
-                        <a href="https://github.com/HazemLenin/" target="_blank" class="social hover:text-gray-400" aria-label="github account">
-                            <i class="fab fa-github text-center"></i>
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=01002353194" id="number" class="social hover:text-green-400" aria-label="whatsapp number">
-                            <i class="fab fa-whatsapp text-center"></i>
-                        </a>
-                        <a href="mailto:hazemlenin@gmail.com" target="_blank" class="social hover:text-red-500" aria-label="gmail">
-                            <i class="far fa-envelope text-center"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- CONTACT END -->
-
-    </main>
-    <footer class="bg-white py-10 text-center text-gray-500">
-        Made with <i class="fa-solid fa-heart"></i> by Hazem Lenin &copy;
-    </footer>
-</body>
+			<!-- CONTACT START -->
+			<section class="bg-white text-black" id="contact">
+				<h2 class="text-4xl text-center mb-10">Let's get in touch</h2>
+				<div
+					class="flex flex-col md:flex-row justify-between items-center md:items-start gap-y-20 md:gap-x-20 lg:gap-x-40"
+				>
+					<form
+						class="bg-indigo-200 text-black p-8 rounded-lg shadow-lg w-full md:w-1/2"
+					>
+						<div
+							class="bg-indigo-600 text-white text-3xl p-4 text-center rounded"
+						>
+							Contact Me
+						</div>
+						<div class="my-2">
+							<label for="name">Name</label>
+							<input type="text" id="name" class="w-full" />
+						</div>
+						<div class="my-2">
+							<label for="email">Email</label>
+							<input type="email" id="email" class="w-full" />
+						</div>
+						<div class="my-2">
+							<label for="message">Message</label>
+							<textarea id="message" class="w-full"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary w-full my-2">
+							Send
+						</button>
+					</form>
+					<div class="w-full md:w-1/2">
+						<h2 class="text-3xl mb-5">You can find me on:</h2>
+						<div class="flex justify-between lg:w-72">
+							<a
+								href="https://www.facebook.com/people/Hazem-Lenin/100009117039974/"
+								target="_blank"
+								class="social hover:text-blue-500"
+								aria-label="facebook account"
+							>
+								<i class="fab fa-facebook-f text-center"></i>
+							</a>
+							<a
+								href="https://www.instagram.com/hazemlenin/"
+								target="_blank"
+								class="social hover:text-purple-500"
+								aria-label="instagram account"
+							>
+								<i class="fab fa-instagram text-center"></i>
+							</a>
+							<a
+								href="https://www.linkedin.com/in/hazem-lenin-3aa06a227/"
+								target="_blank"
+								class="social hover:text-sky-600"
+								aria-label="linkedin account"
+							>
+								<i class="fa-brands fa-linkedin-in text-center"></i>
+							</a>
+							<a
+								href="https://github.com/HazemLenin/"
+								target="_blank"
+								class="social hover:text-gray-400"
+								aria-label="github account"
+							>
+								<i class="fab fa-github text-center"></i>
+							</a>
+							<a
+								href="https://api.whatsapp.com/send?phone=01002353194"
+								id="number"
+								class="social hover:text-green-400"
+								aria-label="whatsapp number"
+							>
+								<i class="fab fa-whatsapp text-center"></i>
+							</a>
+							<a
+								href="mailto:hazemlenin@gmail.com"
+								target="_blank"
+								class="social hover:text-red-500"
+								aria-label="gmail"
+							>
+								<i class="far fa-envelope text-center"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- CONTACT END -->
+		</main>
+		<footer class="bg-white py-10 text-center text-gray-500">
+			Made with <i class="fa-solid fa-heart"></i> by Hazem Lenin &copy;
+		</footer>
+	</body>
 </html>

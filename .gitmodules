@@ -16,3 +16,6 @@
 [submodule "candica"]
 	path = candica
 	url = https://github.com/HazemLenin/candica.git
+[submodule "semicolon-personal-website-task"]
+	path = semicolon-personal-website-task
+	url = https://github.com/HazemLenin/semicolon-personal-website-task.git

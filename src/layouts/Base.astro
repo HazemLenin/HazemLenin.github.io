@@ -43,6 +43,13 @@ const ogImage = new URL(profileImg.src, Astro.site);
   <body class="bg-paper font-body text-ink antialiased">
     <slot />
     <script>
+      import Lenis from "lenis";
+
+      if (matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+        new Lenis({ autoRaf: true, anchors: true });
+      }
+    </script>
+    <script>
       const observer = new IntersectionObserver(
         (entries) => {
           for (const entry of entries) {

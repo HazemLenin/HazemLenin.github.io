@@ -1,0 +1,22 @@
+---
+import { profile } from "../data/profile";
+import SectionHeading from "./SectionHeading.astro";
+---
+
+<section class="reveal mx-auto max-w-4xl px-6 py-16">
+  <SectionHeading id="skills" title="Skills" />
+  <dl class="max-w-2xl divide-y divide-line border-y border-line">
+    {
+      profile.skills.map((skill) => (
+        <div class="grid gap-1 py-4 sm:grid-cols-[8rem_1fr] sm:gap-6">
+          <dt class="text-sm font-medium tracking-wide text-accent">
+            {skill.group}
+          </dt>
+          <dd class="text-sm leading-relaxed text-soft">
+            {skill.items.join(" · ")}
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+</section>

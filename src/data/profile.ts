@@ -16,11 +16,11 @@ export interface Project {
 
 export const profile = {
   name: "Hazem Lenin",
-  title: "Full Stack Developer",
+  title: "Software Engineer",
   tagline:
     "I own complex modules end-to-end in enterprise B2B systems — from .NET Core APIs and Clean Architecture to Angular frontends and production mobile apps.",
   about:
-    "Full Stack Developer with 4+ years of experience. Known for going beyond delivery: restructuring frontend monorepos, implementing MFA flows from scratch, building developer tooling adopted company-wide, and contributing to engineering culture through mentoring, knowledge-sharing sessions, and co-authoring my company's official engineering competency matrix.",
+    "Software Engineer with 4+ years of experience. Known for going beyond delivery: restructuring frontend monorepos, implementing MFA flows from scratch, building developer tooling adopted company-wide, and contributing to engineering culture through mentoring, knowledge-sharing sessions, and co-authoring my company's official engineering competency matrix.",
   email: "hazemlenin@gmail.com",
   phone: "+20 100 235 3194",
   phoneHref: "+201002353194",
@@ -33,7 +33,7 @@ export const profile = {
   experience: [
     {
       company: "GAMP",
-      role: "Full Stack Developer",
+      role: "Software Engineer",
       period: "Mar 2024 — Present",
       location: "Poland · Remote",
       highlights: [

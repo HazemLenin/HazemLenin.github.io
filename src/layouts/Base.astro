@@ -9,13 +9,13 @@ interface Props {
 }
 
 const {
-  title = `${profile.name} — Full Stack Developer | .NET · Angular · Mobile`,
-  description = `Mid-senior full stack developer with 4+ years building enterprise B2B systems. Specialises in .NET Core, Angular, and cross-platform mobile apps. Based in Egypt, working remotely.`,
+  title = `${profile.name} — Software Engineer | .NET · Angular · Mobile`,
+  description = `Mid-senior software engineer with 4+ years building enterprise B2B systems. Specialises in .NET Core, Angular, and cross-platform mobile apps. Based in Egypt, working remotely.`,
 } = Astro.props;
 
 const siteUrl = Astro.site!.toString().replace(/\/$/, "");
 const ogImage = new URL(profileImg.src, Astro.site);
-const ogImageAlt = `${profile.name} — Full Stack Developer`;
+const ogImageAlt = `${profile.name} — Software Engineer`;
 
 const jsonLd = {
   "@context": "https://schema.org",

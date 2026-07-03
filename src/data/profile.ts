@@ -25,7 +25,7 @@ export const profile = {
   phone: "+20 100 235 3194",
   phoneHref: "+201002353194",
   location: "Egypt",
-  cvPath: "/hazem-lenin-cv.pdf",
+  cvPath: "/Hazem_Lenin_CV.pdf",
   links: {
     github: "https://github.com/HazemLenin",
     linkedin: "https://www.linkedin.com/in/hazem-lenin/",
@@ -70,6 +70,13 @@ export const profile = {
         "Peer-to-peer skill-sharing and learning platform — courses, skill transfers between students, live sessions, and chat. Full-stack TypeScript with Drizzle ORM.",
       tags: ["TypeScript", "Node.js", "Drizzle ORM"],
       link: "https://github.com/HazemLenin/zenith",
+    },
+    {
+      name: "Learn Flow",
+      description:
+        "Event-driven mini e-learning platform: Nx monorepo of 3 NestJS microservices (Catalog, Enrollment, Notification) over RabbitMQ, plus a React frontend. Idempotent event consumers, retry/backoff email pipeline, Docker Compose, and Jest/Supertest tests with GitHub Actions CI.",
+      tags: ["NestJS", "RabbitMQ", "React", "Docker"],
+      link: "https://github.com/HazemLenin/learn-flow",
     },
     {
       name: "GapMap & eZRRT",

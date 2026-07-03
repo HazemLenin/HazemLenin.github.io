@@ -5,11 +5,11 @@ import SectionHeading from "./SectionHeading.astro";
 
 <section class="reveal mx-auto max-w-4xl px-6 py-16">
   <SectionHeading id="projects" title="Projects" />
-  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  <ul class="max-w-2xl divide-y divide-line border-y border-line">
     {
       profile.projects.map((project) => (
-        <article class="flex flex-col rounded-lg border border-line bg-raised p-6 transition-colors hover:border-accent">
-          <div class="flex items-baseline justify-between gap-3">
+        <li class="py-6">
+          <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
             <h3 class="font-display text-lg tracking-tight">
               {project.link ? (
                 <a
@@ -26,23 +26,17 @@ import SectionHeading from "./SectionHeading.astro";
               )}
             </h3>
             {project.note && (
-              <span class="shrink-0 text-xs tracking-wide text-soft uppercase">
-                {project.note}
-              </span>
+              <span class="text-xs text-soft">{project.note}</span>
             )}
           </div>
-          <p class="mt-3 grow text-sm leading-relaxed text-soft">
+          <p class="mt-2 max-w-xl text-sm leading-relaxed text-soft">
             {project.description}
           </p>
-          <ul class="mt-5 flex flex-wrap gap-2">
-            {project.tags.map((tag) => (
-              <li class="rounded-full border border-line px-2.5 py-0.5 text-xs text-soft">
-                {tag}
-              </li>
-            ))}
-          </ul>
-        </article>
+          <p class="mt-3 text-xs text-soft">
+            {project.tags.join(" · ")}
+          </p>
+        </li>
       ))
     }
-  </div>
+  </ul>
 </section>

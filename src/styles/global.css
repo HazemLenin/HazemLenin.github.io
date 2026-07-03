@@ -12,6 +12,10 @@
   --muted: #6b6459;
   --line: #e5dfd4;
   --accent: #a0764b;
+  /* Darker than --accent: --accent fails WCAG AA (~3.79:1) on --bg at text
+     sizes. This is for small accent-colored text (labels); marks, underlines
+     and selection keep using --accent. */
+  --accent-text: #8f6440;
 }
 
 .dark {
@@ -21,6 +25,8 @@
   --muted: #9c9488;
   --line: #2a261f;
   --accent: #c49a6c;
+  /* --accent already clears AA (~7.3:1) against dark --bg. */
+  --accent-text: #c49a6c;
 }
 
 @theme inline {
@@ -30,6 +36,7 @@
   --color-soft: var(--muted);
   --color-line: var(--line);
   --color-accent: var(--accent);
+  --color-accent-text: var(--accent-text);
   --font-display: "Fraunces Variable", Georgia, serif;
   --font-body: "Inter Variable", system-ui, sans-serif;
 }
@@ -43,6 +50,12 @@ html {
 ::selection {
   background-color: var(--accent);
   color: var(--bg);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

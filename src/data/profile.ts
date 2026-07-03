@@ -35,7 +35,7 @@ export const profile = {
       company: "GAMP",
       role: "Software Engineer",
       period: "Mar 2024 — Present",
-      location: "Poland · Remote",
+      location: "Poland · Remote · Full-time",
       highlights: [
         "Software engineer on GapMap, a modular B2B partition management platform serving enterprise clients — owned the Contractors module end-to-end across .NET Core API and Angular.",
         "Designed and shipped MFA (Identity Server, recovery codes), PayU payments, subscriptions, a cross-platform feature-toggle system, and raw TCP communication with ethernet-connected printers.",
@@ -48,7 +48,7 @@ export const profile = {
       company: "Pixel Academy",
       role: "Full Stack Developer",
       period: "Oct 2021 — Mar 2024",
-      location: "Egypt",
+      location: "Egypt · On-site · Full-time",
       highlights: [
         "Architected and built multiple e-learning platforms from the ground up with Django REST Framework — API design, data modelling, and backend architecture.",
         "Designed and delivered a full learning-center management system covering appointments, scheduling, pricing rules, and financial reporting.",

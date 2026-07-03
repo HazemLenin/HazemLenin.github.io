@@ -37,7 +37,7 @@ export const profile = {
       period: "Mar 2024 — Present",
       location: "Poland · Remote",
       highlights: [
-        "Software engineer on GapMap, a modular B2B partition management platform serving enterprise clients — owned the Contractors module end-to-end across .NET Core API and Angular.",
+        "Mid-senior software engineer on GapMap, a modular B2B partition management platform serving enterprise clients — owned the Contractors module end-to-end across .NET Core API and Angular.",
         "Designed and shipped MFA (Identity Server, recovery codes), PayU payments, subscriptions, a cross-platform feature-toggle system, and raw TCP communication with ethernet-connected printers.",
         "Solely owned the mobile project: built and shipped GapMap and eZRRT (Capacitor + Angular + Trapeze) to both Google Play and the App Store, with Fastlane CI/CD.",
         "Co-led a 2-month restructure consolidating two large Angular apps into an Nx monorepo with a shared component library.",

@@ -20,7 +20,7 @@ export const profile = {
   tagline:
     "I own complex modules end-to-end in enterprise B2B systems — from .NET Core APIs and Clean Architecture to Angular frontends and production mobile apps.",
   about:
-    "Software Engineer with 4+ years of experience. Known for going beyond delivery: restructuring frontend monorepos, implementing MFA flows from scratch, building developer tooling adopted company-wide, and contributing to engineering culture through mentoring, knowledge-sharing sessions, and co-authoring my company's official engineering competency matrix.",
+    "Software Engineer with 5+ years of experience. Known for going beyond delivery: restructuring frontend monorepos, implementing MFA flows from scratch, building developer tooling adopted company-wide, and contributing to engineering culture through mentoring, knowledge-sharing sessions, and co-authoring my company's official engineering competency matrix.",
   email: "hazemlenin@gmail.com",
   phone: "+20 100 235 3194",
   phoneHref: "+201002353194",

@@ -1,4 +1,5 @@
 ---
+import { ArrowUpRight } from "@lucide/astro";
 import { profile } from "../data/profile";
 import SectionHeading from "./SectionHeading.astro";
 ---
@@ -19,7 +20,10 @@ import SectionHeading from "./SectionHeading.astro";
                   class="transition-colors hover:text-accent"
                 >
                   {project.name}
-                  <span aria-hidden="true"> ↗</span>
+                  <ArrowUpRight
+                    class="ml-1 inline size-4 align-[-0.125em]"
+                    aria-hidden="true"
+                  />
                 </a>
               ) : (
                 project.name

@@ -1,49 +1,58 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-03T00:00:00.000Z",
+  "generatedAt": "2026-07-13T00:00:00.000Z",
   "title": "Design System: Hazem Lenin Portfolio",
   "extensions": {
     "colorMeta": {
       "accent": {
         "role": "primary",
         "displayName": "Terracotta-Tan",
-        "canonical": "oklch(58% 0.07 55)",
-        "tonalRamp": ["oklch(20% 0.03 55)", "oklch(32% 0.045 55)", "oklch(44% 0.06 55)", "oklch(52% 0.07 55)", "oklch(58% 0.07 55)", "oklch(68% 0.065 55)", "oklch(80% 0.05 55)", "oklch(92% 0.02 55)"]
+        "canonical": "#a0764b",
+        "tonalRamp": ["#2e2015", "#4a3423", "#664832", "#835d3e", "#a0764b", "#b8916a", "#d0ad8c", "#e8d4bd"]
+      },
+      "accent-text": {
+        "role": "primary",
+        "displayName": "Legible Tan",
+        "canonical": "#8f6440",
+        "tonalRamp": ["#241809", "#3c2a14", "#553d22", "#6e5030", "#8f6440", "#a87e56", "#c49a6c", "#e0c19a"]
       },
       "paper": {
         "role": "neutral",
-        "displayName": "Warm Paper",
-        "canonical": "oklch(97% 0.008 75)",
-        "tonalRamp": ["oklch(12% 0.01 75)", "oklch(22% 0.012 75)", "oklch(35% 0.012 75)", "oklch(50% 0.01 75)", "oklch(65% 0.01 75)", "oklch(80% 0.009 75)", "oklch(90% 0.008 75)", "oklch(97% 0.008 75)"]
+        "displayName": "Paper",
+        "canonical": "#faf7f2",
+        "tonalRamp": ["#262219", "#413a2e", "#5c5344", "#7a705e", "#99907e", "#bab2a2", "#dcd6c9", "#faf7f2"]
       },
       "ink": {
         "role": "neutral",
-        "displayName": "Warm Ink",
-        "canonical": "oklch(22% 0.005 75)",
-        "tonalRamp": ["oklch(15% 0.005 75)", "oklch(22% 0.005 75)", "oklch(32% 0.006 75)", "oklch(45% 0.008 75)", "oklch(58% 0.01 75)", "oklch(72% 0.012 75)", "oklch(85% 0.01 75)", "oklch(95% 0.008 75)"]
+        "displayName": "Ink",
+        "canonical": "#1a1a1a",
+        "tonalRamp": ["#1a1a1a", "#333130", "#4d4a47", "#66625e", "#807b76", "#99958f", "#ccc8c2", "#ede8e0"]
       },
       "soft": {
         "role": "neutral",
-        "displayName": "Soft Umber",
-        "canonical": "oklch(50% 0.02 75)",
-        "tonalRamp": ["oklch(20% 0.015 75)", "oklch(32% 0.018 75)", "oklch(42% 0.02 75)", "oklch(50% 0.02 75)", "oklch(58% 0.02 75)", "oklch(68% 0.018 75)", "oklch(78% 0.015 75)", "oklch(88% 0.012 75)"]
+        "displayName": "Soft",
+        "canonical": "#6b6459",
+        "tonalRamp": ["#211f1c", "#37332d", "#4d483f", "#6b6459", "#847d71", "#9c9488", "#c1bab0", "#e0dcd4"]
       },
       "line": {
         "role": "neutral",
-        "displayName": "Hairline",
-        "canonical": "oklch(89% 0.01 75)",
-        "tonalRamp": ["oklch(18% 0.01 75)", "oklch(28% 0.01 75)", "oklch(40% 0.01 75)", "oklch(55% 0.01 75)", "oklch(70% 0.01 75)", "oklch(80% 0.01 75)", "oklch(89% 0.01 75)", "oklch(95% 0.008 75)"]
+        "displayName": "Line",
+        "canonical": "#e5dfd4",
+        "tonalRamp": ["#2a261f", "#453f34", "#615a4b", "#7d7563", "#99907c", "#b5ac97", "#d1c9b8", "#e5dfd4"]
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Fraunces Display", "purpose": "Name, section headings, contact email — highest-weight moments only." },
-      "label": { "displayName": "Inter Label", "purpose": "Hero role line, skill group labels, nav links, footer copyright." },
-      "body": { "displayName": "Inter Body", "purpose": "Taglines, descriptions, list values, all running prose." }
+      "display": { "displayName": "Display", "purpose": "The person's name in the hero. Fraunces only." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings and the large Contact email link." },
+      "title": { "displayName": "Title", "purpose": "Item-level headings: job role + company, project names, degree." },
+      "body": { "displayName": "Body", "purpose": "Taglines, descriptions, skill lists. Capped near 65ch." },
+      "label": { "displayName": "Label", "purpose": "Hero role line and skill group labels in Legible Tan; nav links and footer copy." }
     },
     "shadows": [],
     "motion": [
-      { "name": "reveal", "value": "opacity 0.6s ease, transform 0.6s ease", "purpose": "Scroll-triggered section fade-up via .reveal/.reveal.revealed classes." },
-      { "name": "theme-transition", "value": "background-color 0.3s ease, color 0.3s ease", "purpose": "Smooths the light/dark theme toggle." }
+      { "name": "reveal", "value": "opacity 0.6s ease, transform 0.6s ease (translateY 1rem → 0)", "purpose": "Once-per-section scroll reveal via IntersectionObserver; gated behind prefers-reduced-motion." },
+      { "name": "theme-fade", "value": "background-color 0.3s ease, color 0.3s ease", "purpose": "Light/dark theme switch on body and header." },
+      { "name": "lenis-scroll", "value": "Lenis smooth scroll, autoRaf, anchors", "purpose": "Page scrolling; disabled entirely under prefers-reduced-motion." }
     ],
     "breakpoints": [
       { "name": "sm", "value": "640px" }
@@ -54,73 +63,84 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The single filled action on the page: résumé download.",
-      "html": "<a class=\"ds-btn-primary\" href=\"#\" download>Download CV</a>",
-      "css": ".ds-btn-primary { display: inline-block; background: var(--ink, #1a1a1a); color: var(--paper, #faf7f2); border-radius: 9999px; padding: 10px 20px; font-size: 0.875rem; font-weight: 500; font-family: 'Inter Variable', system-ui, sans-serif; text-decoration: none; transition: opacity 0.2s ease; } .ds-btn-primary:hover, .ds-btn-primary:focus-visible { opacity: 0.8; } .ds-btn-primary:focus-visible { outline: 2px solid var(--accent, #a0764b); outline-offset: 2px; }"
+      "description": "The single filled action on the page — Download CV. Ink pill, paper text.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Download CV</a>",
+      "css": ".ds-btn-primary { display: inline-block; background: var(--ink, #1a1a1a); color: var(--bg, #faf7f2); border-radius: 9999px; padding: 10px 20px; font-family: 'Inter Variable', system-ui, sans-serif; font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: opacity 0.15s ease; } .ds-btn-primary:hover { opacity: 0.8; } .ds-btn-primary:focus-visible { outline: 2px solid var(--accent, #a0764b); outline-offset: 3px; }"
     },
     {
       "name": "Underline Link",
       "kind": "custom",
       "refersTo": "link-underline",
-      "description": "Default interactive affordance for all secondary actions (social links, contact methods).",
+      "description": "The default secondary affordance — soft text, hairline underline, accent underline on hover.",
       "html": "<a class=\"ds-link\" href=\"#\">GitHub</a>",
-      "css": ".ds-link { color: var(--soft, #6b6459); font-size: 0.875rem; text-decoration: underline; text-decoration-color: var(--line, #e5dfd4); text-underline-offset: 4px; transition: color 0.2s ease, text-decoration-color 0.2s ease; } .ds-link:hover, .ds-link:focus-visible { color: var(--ink, #1a1a1a); text-decoration-color: var(--accent, #a0764b); }"
+      "css": ".ds-link { color: var(--muted, #6b6459); font-family: 'Inter Variable', system-ui, sans-serif; font-size: 0.875rem; text-decoration: underline; text-decoration-color: var(--line, #e5dfd4); text-underline-offset: 4px; transition: color 0.15s ease, text-decoration-color 0.15s ease; } .ds-link:hover, .ds-link:focus-visible { color: var(--ink, #1a1a1a); text-decoration-color: var(--accent, #a0764b); } .ds-link:focus-visible { outline: 2px solid var(--accent, #a0764b); outline-offset: 3px; }"
     },
     {
       "name": "Section Heading",
       "kind": "custom",
-      "refersTo": "section-heading",
-      "description": "The system's only section marker: an accent em dash before a serif title, replacing eyebrow labels or numbering.",
-      "html": "<h2 class=\"ds-heading\"><span class=\"ds-heading-mark\" aria-hidden=\"true\">—</span>Skills</h2>",
-      "css": ".ds-heading { font-family: 'Fraunces Variable', Georgia, serif; font-size: clamp(1.5rem, 3vw, 1.875rem); letter-spacing: -0.01em; color: var(--ink, #1a1a1a); margin-bottom: 2.5rem; } .ds-heading-mark { color: var(--accent, #a0764b); margin-right: 0.75rem; }"
+      "description": "Fraunces headline with a single accent em-dash mark — the only section marker in the system.",
+      "html": "<h2 class=\"ds-section-heading\"><span class=\"ds-section-mark\" aria-hidden=\"true\">—</span>Experience</h2>",
+      "css": ".ds-section-heading { font-family: 'Fraunces Variable', Georgia, serif; font-size: 1.5rem; font-weight: 400; letter-spacing: -0.025em; color: var(--ink, #1a1a1a); margin: 0; } .ds-section-mark { color: var(--accent, #a0764b); margin-right: 0.75rem; }"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "description": "Sticky translucent paper bar with backdrop blur, hairline bottom border, soft links that ink on hover.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-nav-name\" href=\"#\">Hazem Lenin</a><ul class=\"ds-nav-links\"><li><a href=\"#\">About</a></li><li><a href=\"#\">Experience</a></li><li><a href=\"#\">Projects</a></li><li><a href=\"#\">Contact</a></li></ul></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.5rem; background: color-mix(in srgb, var(--bg, #faf7f2) 80%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line, #e5dfd4); } .ds-nav-name { font-family: 'Fraunces Variable', Georgia, serif; font-size: 1.125rem; letter-spacing: -0.025em; color: var(--ink, #1a1a1a); text-decoration: none; } .ds-nav-links { display: flex; gap: 1.25rem; list-style: none; margin: 0; padding: 0; } .ds-nav-links a { color: var(--muted, #6b6459); font-family: 'Inter Variable', system-ui, sans-serif; font-size: 0.875rem; text-decoration: none; transition: color 0.15s ease; } .ds-nav-links a:hover, .ds-nav-links a:focus-visible { color: var(--ink, #1a1a1a); }"
     },
     {
       "name": "Skills Row",
       "kind": "custom",
-      "refersTo": "skills-row",
-      "description": "Hairline-divided definition-list row used instead of a card grid for tag-like content.",
-      "html": "<div class=\"ds-skills-list\"><div class=\"ds-skills-row\"><dt class=\"ds-skills-label\">Languages</dt><dd class=\"ds-skills-value\">C# · TypeScript · SQL</dd></div></div>",
-      "css": ".ds-skills-list { border-top: 1px solid var(--line, #e5dfd4); border-bottom: 1px solid var(--line, #e5dfd4); } .ds-skills-row { display: grid; gap: 0.25rem; padding: 1rem 0; border-top: 1px solid var(--line, #e5dfd4); } .ds-skills-row:first-child { border-top: none; } .ds-skills-label { font-size: 0.875rem; font-weight: 500; letter-spacing: 0.05em; color: var(--accent, #a0764b); font-family: 'Inter Variable', system-ui, sans-serif; } .ds-skills-value { font-size: 0.875rem; line-height: 1.6; color: var(--soft, #6b6459); }"
+      "description": "Definition-list row: Legible Tan group label, soft dot-joined values, hairline dividers — the anti-card-grid.",
+      "html": "<dl class=\"ds-skills\"><div class=\"ds-skills-row\"><dt>Backend</dt><dd>.NET Core · CQRS · SignalR · Django</dd></div><div class=\"ds-skills-row\"><dt>Frontend</dt><dd>Angular · React · Vue.js · Next.js</dd></div></dl>",
+      "css": ".ds-skills { margin: 0; border-top: 1px solid var(--line, #e5dfd4); border-bottom: 1px solid var(--line, #e5dfd4); font-family: 'Inter Variable', system-ui, sans-serif; } .ds-skills-row { display: grid; grid-template-columns: 8rem 1fr; gap: 1.5rem; padding: 1rem 0; } .ds-skills-row + .ds-skills-row { border-top: 1px solid var(--line, #e5dfd4); } .ds-skills-row dt { font-size: 0.875rem; font-weight: 500; letter-spacing: 0.025em; color: var(--accent-text, #8f6440); } .ds-skills-row dd { margin: 0; font-size: 0.875rem; line-height: 1.625; color: var(--muted, #6b6459); }"
     },
     {
-      "name": "Nav Bar",
-      "kind": "nav",
-      "refersTo": "nav-bar",
-      "description": "Sticky translucent header with backdrop blur and hairline bottom border.",
-      "html": "<header class=\"ds-nav\"><a class=\"ds-nav-brand\" href=\"#top\">Hazem Lenin</a><ul class=\"ds-nav-links\"><li><a href=\"#about\">About</a></li><li><a href=\"#contact\">Contact</a></li></ul></header>",
-      "css": ".ds-nav { position: sticky; top: 0; z-index: 50; border-bottom: 1px solid var(--line, #e5dfd4); background: color-mix(in oklab, var(--paper, #faf7f2) 80%, transparent); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.5rem; } .ds-nav-brand { font-family: 'Fraunces Variable', Georgia, serif; font-size: 1.125rem; letter-spacing: -0.01em; color: var(--ink, #1a1a1a); text-decoration: none; } .ds-nav-links { display: flex; gap: 1.25rem; list-style: none; font-size: 0.875rem; color: var(--soft, #6b6459); } .ds-nav-links a { color: inherit; text-decoration: none; transition: color 0.2s ease; } .ds-nav-links a:hover, .ds-nav-links a:focus-visible { color: var(--ink, #1a1a1a); }"
+      "name": "Timeline Entry",
+      "kind": "custom",
+      "description": "Signature experience treatment: hairline left spine, accent dot, Fraunces title, soft metadata.",
+      "html": "<ol class=\"ds-timeline\"><li class=\"ds-timeline-item\"><span class=\"ds-timeline-dot\" aria-hidden=\"true\"></span><h3>Full-Stack Engineer · GAMP Ltd</h3><p class=\"ds-timeline-period\">2021 — Present</p></li></ol>",
+      "css": ".ds-timeline { list-style: none; margin: 0; padding: 0 0 0 2rem; border-left: 1px solid var(--line, #e5dfd4); } .ds-timeline-item { position: relative; } .ds-timeline-dot { position: absolute; left: -2.35rem; top: 0.4rem; width: 10px; height: 10px; border-radius: 9999px; background: var(--accent, #a0764b); } .ds-timeline-item h3 { font-family: 'Fraunces Variable', Georgia, serif; font-size: 1.25rem; font-weight: 400; letter-spacing: -0.025em; color: var(--ink, #1a1a1a); margin: 0; } .ds-timeline-period { font-family: 'Inter Variable', system-ui, sans-serif; font-size: 0.875rem; color: var(--muted, #6b6459); margin: 0.25rem 0 0; }"
     }
   ],
   "narrative": {
     "northStar": "The Reading Room",
-    "overview": "This is a single page meant to be read, not scanned past. Warm paper tones, a serif display face, and hairline dividers give it the quiet confidence of a well-set personal essay rather than a marketing site. Nothing here is trying to convert a visitor with urgency; it's trying to earn attention through precision — tight type, deliberate spacing, one accent color used sparingly as a signature rather than a decoration. The system explicitly rejects the generic AI-portfolio template: no gradient text, no uppercase eyebrow labels stacked above every section, no numbered 01/02/03 scaffolding, no icon-card grids, no hero-metric stat blocks. Sections are separated by hairline rules and generous vertical rhythm, not by cards or boxed containers. Depth comes from color and line weight, never from shadow.",
+    "overview": "This is a single page meant to be read, not scanned past. Warm paper tones, a serif display face, and hairline dividers give it the quiet confidence of a well-set personal essay rather than a marketing site. Nothing here is trying to convert a visitor with urgency; it's trying to earn attention through precision — tight type, deliberate spacing, one accent color used sparingly as a signature rather than a decoration. The system explicitly rejects the generic AI-portfolio template: no gradient text, no uppercase eyebrow labels, no numbered scaffolding, no icon-card grids, no hero-metric stat blocks. Sections are separated by hairline rules and generous vertical rhythm, not by cards or boxed containers. Depth comes from color and line weight, never from shadow.",
     "keyCharacteristics": [
       "Warm paper background in light mode, warm near-black in dark mode — never pure white or pure black",
-      "Fraunces serif for display moments only (name, section titles, email); Inter for everything functional",
-      "One accent color (warm terracotta-tan) used only for labels, dividers, and hover states — never for large surfaces",
+      "Fraunces serif for display moments only (name, section titles, item headings, email); Inter for everything functional",
+      "One accent color (warm terracotta-tan) used only for labels, marks, timeline dots, and hover states — never for large surfaces",
       "Fully flat: no shadows, no elevation, no glass",
-      "A single em-dash (—) as the section marker, replacing eyebrow labels or numbering"
+      "A single em-dash (—) as the section marker, replacing eyebrow labels or numbering",
+      "One photograph: the circular hero portrait with a hairline border — the page's only imagery",
+      "Lucide icons (20px, stroke-width 1.5) as the only iconography"
     ],
     "rules": [
-      { "name": "The One Accent Rule", "body": "Terracotta-tan appears only on labels, marks, underlines, and hover states — never as a fill on any element larger than an icon or a few words of text.", "section": "colors" },
-      { "name": "The Warm-Neutral Rule", "body": "Every neutral (paper, ink, soft, line) shares the same warm hue lean in both light and dark mode. Never introduce a cool gray.", "section": "colors" },
-      { "name": "The Serif-Only-For-Weight Rule", "body": "Fraunces is reserved for name, section titles, and the contact email. Inter carries body copy, labels, and navigation.", "section": "typography" },
-      { "name": "The No-Shadow Rule", "body": "Never add box-shadow to any component. Depth comes from hairline borders and background-color shifts only.", "section": "elevation" }
+      { "name": "The One Accent Rule", "body": "Terracotta-tan appears only on labels, marks, underlines, timeline dots, and hover states — never as a fill on any element larger than an icon or a few words of text. Its scarcity is what makes it read as a signature, not a theme color.", "section": "colors" },
+      { "name": "The Legible Accent Rule", "body": "Accent-colored text at body/label sizes always uses accent-text (#8f6440), never raw accent (#a0764b) — the base accent fails AA contrast on paper. Non-text accent uses (marks, dots, underline decorations, selection) keep the base accent.", "section": "colors" },
+      { "name": "The Warm-Neutral Rule", "body": "Every neutral (paper, ink, soft, line) shares the same warm hue lean in both light and dark mode. Don't introduce a cool gray anywhere in the system; it will read as mismatched against the serif/paper aesthetic.", "section": "colors" },
+      { "name": "The Serif-Only-For-Weight Rule", "body": "Fraunces is reserved for moments that carry visual weight (name, section titles, item headings, the contact email). Never use it for body copy, labels, or navigation — Inter carries all of that.", "section": "typography" },
+      { "name": "The No-Shadow Rule", "body": "Never add box-shadow to any component. If a surface needs to read as 'above' another, use a hairline border or a background-color shift instead.", "section": "elevation" }
     ],
     "dos": [
-      "Do keep every neutral warm-hued (paper, ink, soft, line) in both light and dark mode",
-      "Do use the accent color sparingly: labels, marks, underline hovers, selection color",
-      "Do use hairline borders and background contrast for all separation and depth",
-      "Do reserve Fraunces serif for name, section headings, and the contact email",
-      "Do default to underlined text links for secondary actions; reserve the filled pill button for the one primary action"
+      "Do keep every neutral warm-hued (paper, ink, soft, line) in both light and dark mode — that warmth is the brand, not an accident.",
+      "Do use the accent sparingly: marks, timeline dots, underline hovers, selection color. If accent starts covering more than a small fraction of any screen, pull it back.",
+      "Do use accent-text (#8f6440) for any accent-colored text at body/label sizes — raw accent fails AA on paper.",
+      "Do use hairline borders (line) and background contrast for all separation and depth. Flat is the rule.",
+      "Do reserve Fraunces serif for name, section headings, item headings, and the contact email — the highest-weight moments only.",
+      "Do default to underlined text links for secondary actions; reserve the single filled pill button for the one primary action (CV download).",
+      "Do gate all motion (Lenis, reveals, theme transitions) behind prefers-reduced-motion: no-preference, with content visible by default."
     ],
     "donts": [
-      "Don't add box-shadows, glassmorphism, or any glow/elevation effect",
-      "Don't add gradient text anywhere",
-      "Don't add uppercase tracked eyebrow labels or numbered section markers (01/02/03)",
-      "Don't build icon+heading+text card grids for skills, projects, or experience",
-      "Don't introduce a cream/sand/beige tint beyond the already-committed paper tone",
-      "Don't pair Fraunces with any other serif, or Inter with any other geometric/humanist sans"
+      "Don't add box-shadows, glassmorphism, or any glow/elevation effect — this system is fully flat by design (the nav's backdrop-blur is the single sanctioned exception).",
+      "Don't add gradient text (background-clip: text with a gradient) anywhere.",
+      "Don't add uppercase tracked eyebrow labels above section headings, or numbered markers (01/02/03) — the single accent-colored em dash is the only section marker this system uses.",
+      "Don't build icon+heading+text card grids for skills, projects, or experience — use hairline-divided lists or the timeline treatment instead.",
+      "Don't introduce a cream/sand/beige tint beyond the already-committed paper tone — don't lighten or desaturate further 'for elegance.'",
+      "Don't pair Fraunces with any other serif, or Inter with any other geometric/humanist sans — the pairing is fixed.",
+      "Don't set text in raw accent (#a0764b) on paper at sizes below 24px — it fails WCAG AA (~3.79:1). Use accent-text.",
+      "Don't add a second photograph or decorative imagery — the hero portrait is the page's only image; typography and rhythm carry the rest."
     ]
   }
 }

@@ -9,8 +9,8 @@ interface Props {
 }
 
 const {
-  title = `${profile.name} — Software Engineer | .NET · Angular · Mobile`,
-  description = `Software engineer with 5+ years building enterprise B2B systems. Specialises in .NET Core, Angular, and cross-platform mobile apps. Based in Egypt, working remotely.`,
+  title = `${profile.name} — Software Engineer | Backend · Frontend · Mobile`,
+  description = `Software engineer with 5+ years building enterprise B2B systems end-to-end: backend, frontend, and mobile. Stacks include .NET, Angular, NestJS, Django, and React. Based in Egypt, working remotely.`,
 } = Astro.props;
 
 const siteUrl = Astro.site!.toString().replace(/\/$/, "");
@@ -30,13 +30,19 @@ const jsonLd = {
   knowsAbout: [
     ".NET Core",
     "Angular",
+    "NestJS",
+    "Django",
     "Clean Architecture",
     "CQRS",
     "SignalR",
+    "RabbitMQ",
+    "PostgreSQL",
+    "MongoDB",
     "React",
     "Vue.js",
     "Next.js",
-    "Django",
+    "TypeScript",
+    "Python",
     "Capacitor",
     "Docker",
     "CI/CD",
@@ -59,7 +65,7 @@ const jsonLd = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="full stack developer, .NET Core, Angular, React, Django, mobile developer, Capacitor, Clean Architecture, CQRS, Egypt, remote developer, software engineer" />
+    <meta name="keywords" content="full stack developer, software engineer, .NET Core, Angular, NestJS, Django, React, Vue.js, Next.js, TypeScript, Python, PostgreSQL, MongoDB, RabbitMQ, mobile developer, Capacitor, Clean Architecture, CQRS, Egypt, remote developer" />
     <meta name="author" content={profile.name} />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="generator" content={Astro.generator} />
